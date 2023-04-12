@@ -7,6 +7,7 @@ public class TileChecker : MonoBehaviour
     // Start is called before the first frame update
     private Vector3 thisTileLocation;
     Vector3[] _tileNumberArray;
+    public int thisTileValue;
     
     void Awake()
     {
@@ -22,15 +23,15 @@ public class TileChecker : MonoBehaviour
 
         foreach(Vector3 number in _tileNumberArray)
         {
-            /*
+           //If you are next to a tile with a value, find the highest value from those tiles 
+        }    
+    }
+
+ /*
             if you are next to player, make your number 1
 
             else if you are not next to player, check for lowest number between objects, add 1 and that becomes your number
 
-            else print an error
+            else print an error 
             */
-        }    
-    }
-
-
 }
